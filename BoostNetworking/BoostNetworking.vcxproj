@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1b98cf36-fd4e-4cdb-a74c-9652e700627a}</ProjectGuid>
+    <RootNamespace>BoostNetworking</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\raygui\src;C:\raylib\raylib\src;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\raygui\src;C:\raylib\raylib\src;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="class\block.cpp" />
+    <ClCompile Include="class\game.cpp" />
+    <ClCompile Include="class\graphics_util.cpp" />
+    <ClCompile Include="class\level.cpp" />
+    <ClCompile Include="class\map.cpp" />
+    <ClCompile Include="class\map1vs1.cpp" />
+    <ClCompile Include="class\net_connection.cpp" />
+    <ClCompile Include="class\connectionHashMap.cpp" />
+    <ClCompile Include="class\human.cpp" />
+    <ClCompile Include="class\bomb.cpp" />
+    <ClCompile Include="class\button.cpp" />
+    <ClCompile Include="class\enemy.cpp" />
+    <ClCompile Include="class\player.cpp" />
+    <ClCompile Include="class\asset.cpp" />
+    <ClCompile Include="header\human.hpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="class\server.cpp" />
+    <ClCompile Include="class\serverTCPInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header\asset.hpp" />
+    <ClInclude Include="header\block.hpp" />
+    <ClInclude Include="header\bomb.hpp" />
+    <ClInclude Include="header\button.hpp" />
+    <ClInclude Include="header\connectionHashMap.hpp" />
+    <ClInclude Include="example.h" />
+    <ClInclude Include="header\enemy.hpp" />
+    <ClInclude Include="header\game.hpp" />
+    <ClInclude Include="header\graphics_util.hpp" />
+    <ClInclude Include="header\level.hpp" />
+    <ClInclude Include="header\macros.hpp" />
+    <ClInclude Include="header\map.hpp" />
+    <ClInclude Include="header\map1vs1.hpp" />
+    <ClInclude Include="header\net_connection.hpp" />
+    <ClInclude Include="header\packet_deque.hpp" />
+    <ClInclude Include="header\player.hpp" />
+    <ClInclude Include="header\structure.hpp" />
+    <ClInclude Include="header\util.hpp" />
+    <ClInclude Include="header\server.hpp" />
+    <ClInclude Include="header\serverTCPInterface.hpp" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BoostNetworking.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\aititle.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\background.jpg" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\bomb-count.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\bomb-radius.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\bomb.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\brick.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\clay.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\clock.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\diamond.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\emarald.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\explosion-all.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\gold.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\goomba.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\grass1.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\grass2.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\grass3.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\heart.png" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\newbg.jpg" />
+    <Image Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\player2.png" />
+    <Image Include="resources\aititle.png" />
+    <Image Include="resources\background.jpg" />
+    <Image Include="resources\bomb-count.png" />
+    <Image Include="resources\bomb-radius.png" />
+    <Image Include="resources\bomb.png" />
+    <Image Include="resources\brick.png" />
+    <Image Include="resources\clay.png" />
+    <Image Include="resources\clock.png" />
+    <Image Include="resources\diamond.png" />
+    <Image Include="resources\emarald.png" />
+    <Image Include="resources\explosion-all.png" />
+    <Image Include="resources\gold.png" />
+    <Image Include="resources\goomba.png" />
+    <Image Include="resources\grass1.png" />
+    <Image Include="resources\grass2.png" />
+    <Image Include="resources\grass3.png" />
+    <Image Include="resources\heart.png" />
+    <Image Include="resources\newbg.jpg" />
+    <Image Include="resources\player2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\block-grass-large.glb" />
+    <None Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\block-grass-narrow.glb" />
+    <None Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\bolt.glb" />
+    <None Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\bomb2.glb" />
+    <None Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\bombcount.glb" />
+    <None Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\box.glb" />
+    <None Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\enemy.glb" />
+    <None Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\player.glb" />
+    <None Include="..\..\..\..\OneDrive\Desktop\Code\CPP\bomberman3d\resources\star.glb" />
+    <None Include="BoostNetworking.aps" />
+    <None Include="resources\block-grass-large.glb" />
+    <None Include="resources\block-grass-narrow.glb" />
+    <None Include="resources\bolt.glb" />
+    <None Include="resources\bomb2.glb" />
+    <None Include="resources\bombcount.glb" />
+    <None Include="resources\box.glb" />
+    <None Include="resources\enemy.glb" />
+    <None Include="resources\player.glb" />
+    <None Include="resources\star.glb" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

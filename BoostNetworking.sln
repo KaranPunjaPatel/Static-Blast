@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BoostNetworking", "BoostNetworking\BoostNetworking.vcxproj", "{1B98CF36-FD4E-4CDB-A74C-9652E700627A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientNetwork", "ClientNetwork\ClientNetwork.vcxproj", "{A290131D-5841-4965-95D9-22892AE05E89}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B98CF36-FD4E-4CDB-A74C-9652E700627A} = {1B98CF36-FD4E-4CDB-A74C-9652E700627A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B98CF36-FD4E-4CDB-A74C-9652E700627A}.Debug|x64.ActiveCfg = Debug|x64
+		{1B98CF36-FD4E-4CDB-A74C-9652E700627A}.Debug|x64.Build.0 = Debug|x64
+		{1B98CF36-FD4E-4CDB-A74C-9652E700627A}.Debug|x86.ActiveCfg = Debug|Win32
+		{1B98CF36-FD4E-4CDB-A74C-9652E700627A}.Debug|x86.Build.0 = Debug|Win32
+		{1B98CF36-FD4E-4CDB-A74C-9652E700627A}.Release|x64.ActiveCfg = Release|x64
+		{1B98CF36-FD4E-4CDB-A74C-9652E700627A}.Release|x64.Build.0 = Release|x64
+		{1B98CF36-FD4E-4CDB-A74C-9652E700627A}.Release|x86.ActiveCfg = Release|Win32
+		{1B98CF36-FD4E-4CDB-A74C-9652E700627A}.Release|x86.Build.0 = Release|Win32
+		{A290131D-5841-4965-95D9-22892AE05E89}.Debug|x64.ActiveCfg = Debug|x64
+		{A290131D-5841-4965-95D9-22892AE05E89}.Debug|x64.Build.0 = Debug|x64
+		{A290131D-5841-4965-95D9-22892AE05E89}.Debug|x86.ActiveCfg = Debug|Win32
+		{A290131D-5841-4965-95D9-22892AE05E89}.Debug|x86.Build.0 = Debug|Win32
+		{A290131D-5841-4965-95D9-22892AE05E89}.Release|x64.ActiveCfg = Release|x64
+		{A290131D-5841-4965-95D9-22892AE05E89}.Release|x64.Build.0 = Release|x64
+		{A290131D-5841-4965-95D9-22892AE05E89}.Release|x86.ActiveCfg = Release|Win32
+		{A290131D-5841-4965-95D9-22892AE05E89}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B132D34-C7DA-455A-ACA4-10F71DAB7062}
+	EndGlobalSection
+EndGlobal
