@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header\asset.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\block.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\bomb.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\button.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\enemy.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\game.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\graphics_util.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\human.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\level.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\macros.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\map.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\map1vs1.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\player.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\structure.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="class\asset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\bomb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\graphics_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\human.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\map1vs1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="class\player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\aititle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\background.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\bomb.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\bomb-count.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\bomb-radius.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\brick.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\clay.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\clock.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\diamond.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\emarald.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\explosion-all.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\gold.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\goomba.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\grass1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\grass2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\grass3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\heart.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\newbg.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\player2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\block-grass-large.glb" />
+    <None Include="resources\block-grass-narrow.glb" />
+    <None Include="resources\bolt.glb" />
+    <None Include="resources\bomb2.glb" />
+    <None Include="resources\bombcount.glb" />
+    <None Include="resources\box.glb" />
+    <None Include="resources\enemy.glb" />
+    <None Include="resources\player.glb" />
+    <None Include="resources\star.glb" />
+  </ItemGroup>
+</Project>

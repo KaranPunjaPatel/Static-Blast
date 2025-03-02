@@ -4,11 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BoostNetworking", "BoostNetworking\BoostNetworking.vcxproj", "{1B98CF36-FD4E-4CDB-A74C-9652E700627A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B45AB35B-13CF-459B-BFC1-455305BF58A4} = {B45AB35B-13CF-459B-BFC1-455305BF58A4}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientNetwork", "ClientNetwork\ClientNetwork.vcxproj", "{A290131D-5841-4965-95D9-22892AE05E89}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1B98CF36-FD4E-4CDB-A74C-9652E700627A} = {1B98CF36-FD4E-4CDB-A74C-9652E700627A}
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "Game\Game.vcxproj", "{B45AB35B-13CF-459B-BFC1-455305BF58A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +39,14 @@ Global
 		{A290131D-5841-4965-95D9-22892AE05E89}.Release|x64.Build.0 = Release|x64
 		{A290131D-5841-4965-95D9-22892AE05E89}.Release|x86.ActiveCfg = Release|Win32
 		{A290131D-5841-4965-95D9-22892AE05E89}.Release|x86.Build.0 = Release|Win32
+		{B45AB35B-13CF-459B-BFC1-455305BF58A4}.Debug|x64.ActiveCfg = Debug|x64
+		{B45AB35B-13CF-459B-BFC1-455305BF58A4}.Debug|x64.Build.0 = Debug|x64
+		{B45AB35B-13CF-459B-BFC1-455305BF58A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{B45AB35B-13CF-459B-BFC1-455305BF58A4}.Debug|x86.Build.0 = Debug|Win32
+		{B45AB35B-13CF-459B-BFC1-455305BF58A4}.Release|x64.ActiveCfg = Release|x64
+		{B45AB35B-13CF-459B-BFC1-455305BF58A4}.Release|x64.Build.0 = Release|x64
+		{B45AB35B-13CF-459B-BFC1-455305BF58A4}.Release|x86.ActiveCfg = Release|Win32
+		{B45AB35B-13CF-459B-BFC1-455305BF58A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a290131d-5841-4965-95d9-22892ae05e89}</ProjectGuid>
-    <RootNamespace>ClientNetwork</RootNamespace>
+    <ProjectGuid>{b45ab35b-13cf-459b-bfc1-455305bf58a4}</ProjectGuid>
+    <RootNamespace>Game</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -40,13 +40,13 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -71,18 +71,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\raygui\src;C:\raylib\raylib\src;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\raygui\src;C:\raylib\raylib\src;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <VcpkgUseStatic>true</VcpkgUseStatic>
-    <VcpkgUseMD>true</VcpkgUseMD>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <VcpkgUseStatic>true</VcpkgUseStatic>
-    <VcpkgUseMD>true</VcpkgUseMD>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -119,12 +117,10 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\karan\source\repos\BoostNetworking\Game;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);C:\Users\karan\source\repos\BoostNetworking\x64\Debug\Game.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -136,26 +132,75 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\karan\source\repos\BoostNetworking\Game;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);C:\Users\karan\source\repos\BoostNetworking\x64\Debug\Game.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="class\client.cpp" />
-    <ClCompile Include="class\clientTCPInterface.cpp" />
-    <ClCompile Include="class\graphics.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="header\asset.hpp" />
+    <ClInclude Include="header\block.hpp" />
+    <ClInclude Include="header\bomb.hpp" />
+    <ClInclude Include="header\button.hpp" />
+    <ClInclude Include="header\enemy.hpp" />
+    <ClInclude Include="header\game.hpp" />
+    <ClInclude Include="header\graphics_util.hpp" />
+    <ClInclude Include="header\human.hpp" />
+    <ClInclude Include="header\level.hpp" />
+    <ClInclude Include="header\macros.hpp" />
+    <ClInclude Include="header\map.hpp" />
+    <ClInclude Include="header\map1vs1.hpp" />
+    <ClInclude Include="header\player.hpp" />
+    <ClInclude Include="header\structure.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header\graphics.hpp" />
-    <ClInclude Include="header\client.hpp" />
-    <ClInclude Include="header\clientTCPInterface.hpp" />
+    <ClCompile Include="class\asset.cpp" />
+    <ClCompile Include="class\block.cpp" />
+    <ClCompile Include="class\bomb.cpp" />
+    <ClCompile Include="class\button.cpp" />
+    <ClCompile Include="class\enemy.cpp" />
+    <ClCompile Include="class\game.cpp" />
+    <ClCompile Include="class\graphics_util.cpp" />
+    <ClCompile Include="class\human.cpp" />
+    <ClCompile Include="class\level.cpp" />
+    <ClCompile Include="class\map.cpp" />
+    <ClCompile Include="class\map1vs1.cpp" />
+    <ClCompile Include="class\player.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\aititle.png" />
+    <Image Include="resources\background.jpg" />
+    <Image Include="resources\bomb-count.png" />
+    <Image Include="resources\bomb-radius.png" />
+    <Image Include="resources\bomb.png" />
+    <Image Include="resources\brick.png" />
+    <Image Include="resources\clay.png" />
+    <Image Include="resources\clock.png" />
+    <Image Include="resources\diamond.png" />
+    <Image Include="resources\emarald.png" />
+    <Image Include="resources\explosion-all.png" />
+    <Image Include="resources\gold.png" />
+    <Image Include="resources\goomba.png" />
+    <Image Include="resources\grass1.png" />
+    <Image Include="resources\grass2.png" />
+    <Image Include="resources\grass3.png" />
+    <Image Include="resources\heart.png" />
+    <Image Include="resources\newbg.jpg" />
+    <Image Include="resources\player2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\block-grass-large.glb" />
+    <None Include="resources\block-grass-narrow.glb" />
+    <None Include="resources\bolt.glb" />
+    <None Include="resources\bomb2.glb" />
+    <None Include="resources\bombcount.glb" />
+    <None Include="resources\box.glb" />
+    <None Include="resources\enemy.glb" />
+    <None Include="resources\player.glb" />
+    <None Include="resources\star.glb" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

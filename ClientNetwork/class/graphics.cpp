@@ -1,7 +1,12 @@
 #include <raylib.h>
 
 #include "../header/graphics.hpp"
-#include "../../BoostNetworking/header/game.hpp"
+
+//#include "header/game.hpp"
+#include "header/game.hpp"
+//#include "Game"
+
+//#include "../../BoostNetworking/header/game.hpp"
 //#include "../../BoostNetworking/header/asset.hpp"
 
 constexpr double GAME_STATE_RATE = 30.0;
